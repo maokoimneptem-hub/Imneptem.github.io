@@ -1,13 +1,58 @@
 <!DOCTYPE html>
 <html>
-<body>
-<h1>Hola mundo</h1>
-<p>Mi primera web.</p>
-</body>
-</html>
+<head>
 <style>
 body {
-    background: black;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    background: #111;
     color: white;
+    font-family: Arial;
+}
+
+/* banda izquierda */
+.left {
+    width: 20%;
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* centro */
+.center {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+
+/* banda derecha */
+.right {
+    width: 20%;
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 </style>
+</head>
+
+<body>
+
+<div class="left">
+    Menú
+</div>
+
+<div class="center">
+    Mi web
+</div>
+
+<div class="right">
+    Contacto
+</div>
+
+</body>
+</html>
